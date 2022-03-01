@@ -1,0 +1,47 @@
+.graph {
+  width: calc(99vw - 60px);
+  height: calc(99vh - 60px);
+}
+
+.loading {
+  padding: 200px;
+}
+
+.elemental-node {
+  font-size: 65px;
+  box-sizing: border-box;
+  color: black;
+  border-radius: 350px;
+  height: 350px;
+  width: 350px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 24px 29px 0 rgba(4, 116, 190, 0.9), 0 26px 40px 0 rgba(2, 66, 139, 0.19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0;
+}
+.elemental-node--hover {
+  display: none;
+  position: absolute;
+  background: black;
+  padding: 5px;
+  left: 20px;
+  top: 0;
+  width: max-content;
+  height: 20px;
+  z-index: 99;
+}
+.elemental-node:hover {
+  filter: brightness(120%);
+}
+.elemental-node:hover .elemental-node--hover {
+  display: block;
+}
+
+.rd3t-link {
+  fill: none;
+  stroke: rgb(8, 52, 66);
+  stroke-width: 2px;
+}
